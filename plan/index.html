@@ -26,6 +26,8 @@
   var standalone = window.navigator.standalone || window.matchMedia('(display-mode: standalone)').matches;
   var fromIcon = /[?&]app=1/.test(location.search);
   if (standalone || fromIcon) location.replace('https://claude.ai/artifact/UwtZyrvggD7nnkmJuY5HQ8');
+  // Al añadir a la pantalla de inicio se guarda esta dirección con ?app=1, así el icono abre la aplicación directamente.
+  else if (history.replaceState) history.replaceState(null, '', location.pathname + '?app=1');
 </script>
 </body>
 </html>
