@@ -1,8 +1,8 @@
 {
   "name": "Plan de redes OF Sport",
   "short_name": "Plan de redes",
-  "start_url": "./?app=1",
-  "display": "browser",
+  "start_url": "./",
+  "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#cd0039",
   "icons": [
